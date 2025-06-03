@@ -1,0 +1,662 @@
+body {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font);
+
+}
+
+.navbar-nav {
+  margin-left: auto;
+
+
+
+}
+
+a {
+  /* color: var(--accent-color); */
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.modal-content {
+  background: linear-gradient(135deg, #6992d0);
+  transition: all 0.3s ease;
+  border-radius: 1rem;
+}
+
+
+:root {
+  --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Jost", sans-serif;
+  --nav-font: "Poppins", sans-serif;
+  --default-color: #000000;
+  --background-color: #ffffff;
+  --default-font: 'Poppins', sans-serif;
+  --accent-color: #007bff;
+  --nav-color: #ffffff;
+  --nav-hover-color: #47b2e4;
+  --nav-mobile-background-color: #ffffff;
+  --nav-dropdown-background-color: #ffffff;
+  --nav-dropdown-color: #444444;
+  --nav-dropdown-hover-color: #47b2e4;
+
+}
+
+
+
+a:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  text-decoration: none;
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+.container-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 500px;
+  background-image: url(/images/backgroundimg.png);
+  background-size: cover;
+  overflow: hidden;
+
+}
+
+
+.cart {
+  position: relative;
+}
+
+.floating-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #c77b7b;
+}
+
+.navbar-brand img {
+  max-height: 50px;
+  width: auto;
+}
+
+.about-section h2 {
+  font-size: 3rem;
+  font-weight: 500;
+
+}
+
+.about-section h4 {
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+#servicescategory {
+  background-image: url('images/whitebackground.png');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+  position: relative;
+  z-index: 1;
+
+}
+
+#servicescategory .col-md-6 {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+
+}
+
+.card {
+  max-width: 100%;
+}
+
+.cart {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: mymove 10s infinite;
+}
+
+.container-fluid h4 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 50px;
+  color: #444444;
+  font-size: 3rem;
+  font-weight: 500;
+
+}
+
+.section-title h2 {
+  text-align: center;
+  margin-top: 50px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.servicesimg {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.servicesimg img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.servicesimg p {
+  text-align: center;
+  margin-top: 50px;
+  color: #444444;
+  font-size: 1.5rem;
+}
+
+.servicesimg hr {
+  width: 100px;
+  margin: 20px auto;
+  border: 2px solid black;
+}
+
+.container-fluid hr {
+  width: 100px;
+  margin: 20px auto;
+  border: 2px solid black;
+}
+
+.section-title hr {
+  width: 100px;
+  margin: 20px auto;
+  border: 2px solid black;
+}
+
+.services-info {
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  color: white;
+  max-width: 400px;
+}
+
+.services-info p {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+
+.brand-identity h2 {
+  text-align: center;
+  margin-top: 50px;
+  color: #444444;
+
+}
+
+.brand-identity hr {
+  text-align: center;
+  width: 100px;
+  margin: 20px auto;
+  border: 2px solid black;
+
+}
+
+.brand-identity h5 {
+  margin: 20px auto;
+  text-align: center;
+
+}
+
+.brandideas h2 {
+  text-align: center;
+  margin-top: 50px;
+  color: #444444;
+
+}
+
+.brandideas hr {
+  text-align: center;
+  width: 100px;
+  margin: 20px auto;
+  border: 2px solid black;
+}
+
+.brandideas h5 {
+  margin: 20px auto;
+  text-align: center;
+
+}
+
+@keyframes mymove {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Circular positioning */
+.float-1 {
+  top: 0%;
+  left: 50%;
+}
+
+.float-2 {
+  top: 18%;
+  left: 82%;
+}
+
+.float-3 {
+  top: 50%;
+  left: 100%;
+}
+
+.float-4 {
+  top: 82%;
+  left: 82%;
+}
+
+.float-5 {
+  top: 100%;
+  left: 50%;
+}
+
+.float-6 {
+  top: 82%;
+  left: 18%;
+}
+
+.float-7 {
+  top: 50%;
+  left: 0%;
+}
+
+.float-8 {
+  top: 18%;
+  left: 18%;
+}
+
+.float-9 {
+  top: 10%;
+  left: 65%;
+}
+
+.float-10 {
+  top: 90%;
+  left: 35%;
+}
+
+.float-11 {
+  top: 50%;
+  left: 70%;
+}
+
+
+
+/* out door advertisement  */
+
+.outdoor-content {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.outdoor-content hr {
+  text-align: center;
+  width: 100px;
+  margin: 20px auto;
+  border: 2px solid black;
+}
+
+.outdoor-content h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+
+}
+
+.outdoor-content p {
+  width: 80%;
+  margin: 20px auto;
+}
+
+
+/* indoor advertisement  */
+.indoor-content {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.indoor-content hr {
+  text-align: center;
+  width: 100px;
+  margin: 20px auto;
+  border: 2px solid black;
+}
+
+.indoor-content h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+
+}
+
+.indoor-content p {
+  width: 80%;
+  margin: 20px auto;
+}
+
+
+/* printing-content */
+
+.printing-content {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.printing-content hr {
+  text-align: center;
+  width: 100px;
+  margin: 20px auto;
+  border: 2px solid black;
+}
+
+.printing-content h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.printing-content p {
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* digital advertisement  */
+.digital-content {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.digital-content hr {
+  text-align: center;
+  width: 100px;
+  margin: 20px auto;
+  border: 2px solid black;
+}
+
+.digital-content p {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.digital-content h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+
+/* values  */
+
+.values {
+  margin-top: 50px;
+  background: linear-gradient(120deg, #ffece6 50%, #cce4f7 50%);
+  padding: 60px 20px;
+  color: #000;
+}
+
+.values h4,
+h1 {
+  display: flex;
+  padding-top: 50px;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.col-lg-4 img {
+
+  max-width: 100px;
+  height: auto;
+  display: block;
+}
+
+.values .row {
+  margin-top: 50px;
+  padding-left: 50px;
+}
+
+.values h4 {
+  font-weight: 600;
+  font-size: 4rem;
+  text-transform: capitalize;
+}
+
+.values .row h5 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.values .row p {
+  width: 250px;
+}
+
+
+.social-bar {
+  list-style: none;
+  position: fixed;
+  top: 20%;
+  right: 0;
+  flex-direction: column;
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 10px 0px 0px 10px;
+  z-index: 9999;
+  box-shadow: 0 0 5px rgba(0, 10, 0, 0.2);
+  background: rgb(255, 255, 255);
+  transition: all 0.3s ease-in-out;
+}
+
+
+.social-bar li {
+  list-style: none;
+}
+
+.social-bar li a {
+  color: #fff;
+}
+
+.social-bar li a:hover {
+  color: red;
+}
+
+
+.bi-youtube {
+  color: red;
+}
+
+.bi-youtube:hover {
+  color: red;
+  transform: scale(1.2)
+}
+
+.bi-facebook {
+  color: blue;
+}
+
+.bi-facebook:hover {
+  color: blue;
+  transform: scale(1.2)
+}
+
+.bi-instagram {
+  color: rgb(220, 87, 207)
+}
+
+.bi-instagram:hover {
+  color: rgb(220, 87, 207);
+  transform: scale(1.2)
+}
+
+
+.bi-linkedin {
+  color: rgb(56, 56, 218);
+}
+
+.bi-linkedin:hover {
+  color: rgb(56, 56, 218);
+  transform: scale(1.2)
+}
+
+
+.bi-twitter-x {
+  color: rgb(12, 12, 14);
+}
+
+.bi-twitter-x:hover {
+  color: rgb(12, 12, 14);
+  transform: scale(1.2)
+}
+
+
+/* indoor */
+
+.card {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  overflow: hidden;
+  transition: transform 03s;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.card .info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.card:hover .info {
+  transform: translateY(0);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  margin-top: 20px;
+  background-color: rgb(255, 248, 248);
+}
+
+.footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-links ul i {
+  margin-right: 3px;
+  font-size: 12px;
+  line-height: 0;
+  color: var(--accent-color);
+}
+
+.footer .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-links ul a {
+  display: inline-block;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  line-height: 1;
+
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+}
+
+.footer .footer-links ul a:hover {
+  color: var(--accent-color);
+}
+
+.footer .footer-about a {
+  color: var(--heading-color);
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: var(--heading-font);
+}
+
+.footer .footer-contact p {
+  margin-bottom: 5px;
+}
+
+.footer .copyright {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.footer .copyright p {
+  margin-bottom: 0;
+}
+
+.footer .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+  font-size: 16px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
